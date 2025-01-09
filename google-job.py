@@ -1,4 +1,5 @@
 import urllib.parse
+import webbrowser
 
 def create_google_jobs_url(job_title, location):
     # Creiamo il termine di ricerca combinando il ruolo e la posizione
@@ -22,3 +23,6 @@ url = create_google_jobs_url(job_title, location)
 
 # Stampa il link per la ricerca su Google Jobs
 print("Link per la ricerca di lavoro su Google Jobs:", url)
+
+# Apri l'URL nel browser predefinito
+webbrowser.open(url)
